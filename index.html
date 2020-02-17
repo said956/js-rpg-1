@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>rpg challenge</title>
+</head>
+<body>
+    <div id="main-container">
+        <section id="character-selection1">
+            <p>Player 1</p>
+            <form action="">
+                <div>
+                    <label for="name-rpg1">Name :</label>
+                    <input type="text" name="name" id="name-rpg1" />
+                </div>
+                <div>
+                    <label for="item-rpg1">Items :</label>
+                    <select id="item-rpg1">
+                        <option value="Boots">Boots</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Sword">Sword</option>
+                        <option value="Bow">Bow</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="race-rpg1">Race :</label>
+                    <select id="race-rpg1">
+                        <option value="Humans">Humans</option>
+                        <option value="Orcs">Orcs</option>
+                        <option value="Elves">Elves</option>
+                        <option value="Vampires">Vampires</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <section id="character-selection2">
+            <p>Player 2</p>
+            <form action="">
+                <div>
+                    <label for="name-rpg2">Name :</label>
+                    <input type="text" name="name" id="name-rpg2" />
+                </div>
+                <div>
+                    <label for="item-rpg2">Items :</label>
+                    <select id="item-rpg2">
+                        <option value="Boots">Boots</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Sword">Sword</option>
+                        <option value="Bow">Bow</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="race-rpg2">Race :</label>
+                    <select id="race-rpg2">
+                        <option value="Humans">Humans</option>
+                        <option value="Orcs">Orcs</option>
+                        <option value="Elves">Elves</option>
+                        <option value="Vampires">Vampires</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+        <div>
+            <button id="run">Start the battle !</button>
+        </div>
+    </div>
+    <div id="battle-container">
+        <div id="fighter01">
+            <div id="fighter01-images">
+                <img id="fighter01-raceimg" src="" alt="">
+                <img id="fighter01-itemimg" src="" alt="">
+            </div>
+            <div id="info-fighter01">
+                <p id="fighter01-name">Name: </p>
+                <p id="fighter01-race">Race: </p>
+                <p id="fighter01-item">Items: </p>
+            </div>
+            <div class="health">
+                <h3>Health: </h3>
+                <div id="fighter01-healthbar">
+                    <div id="healthbar1"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="fighter01-hit">Hit</button>
+                <button id="fighter01-heal">Heal</button>
+                <button id="fighter01-yield">Yield</button>
+            </div>
+        </div>
+        <div id="vs">VS</div>
+        <div id="fighter02">
+            <div id="fighter02-images">
+                <img id="fighter02-raceimg" src="" alt="">
+                <img id="fighter02-itemimg" src="" alt="">
+            </div>
+            <div id="info-fighter02">
+                <p id="fighter02-name">Name: </p>
+                <p id="fighter02-race">Race: </p>
+                <p id="fighter02-item">Items: </p>
+            </div>
+            <div class="health">
+                <h3>Health: </h3>
+                <div id="fighter02-healthbar">
+                    <div id="healthbar2"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="fighter02-hit">Hit</button>
+                <button id="fighter02-heal">Heal</button>
+                <button id="fighter02-yiel">Yield</button>
+            </div>
+        </div>
+    </div>
+    <div id="starter">
+        <button class="starter">Click to see who starts !</button>
+    </div>
+    <script type="module" src="./character.js"></script>
+    <script type="module" src="./gamelogic.js"></script>
+</body>
+</html>
